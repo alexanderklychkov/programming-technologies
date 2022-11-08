@@ -94,7 +94,7 @@ main()
     else if ((month == 4 || month == 6 || month == 9 || month == 11) && day > 30) {
         canCalculateSign = false;
     }
-    else if ((month == 2 && isLeap && day > 29) || (month == 2 && !isLeap && day > 29)) 
+    else if ((month == 2 && isLeap && day > 29) || (month == 2 && !isLeap && day > 28)) 
     {
         canCalculateSign = false;
     }
