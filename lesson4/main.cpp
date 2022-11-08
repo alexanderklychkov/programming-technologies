@@ -6,6 +6,7 @@ main()
 	
 	printf("Day? ");
 	scanf("%i", &day);
+
 	
 	switch(day)
 	{
