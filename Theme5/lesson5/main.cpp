@@ -25,12 +25,6 @@ main()
         return 0;
     }
 
-    if (columns != rows)
-    {
-        printf("Columns need equals rows");
-        return 0;
-    }
-
     for (int i = 0; i < rows; i++)
     {
         for(int j = 0; j < columns; j++)
@@ -69,4 +63,6 @@ main()
         }
         printf("\n");
     }
+
+    printf("%i", newMas[1][2]);
 }
