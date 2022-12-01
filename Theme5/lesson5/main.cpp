@@ -56,7 +56,6 @@ main()
         for (int j = 0; j < columns; j++)
         {
             newMas[i][j] = mas[j][i];
-            newMas[j][i] = mas[i][j];
         }
     }
 
