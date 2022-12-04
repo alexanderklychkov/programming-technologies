@@ -25,12 +25,14 @@ main()
         return 0;
     }
 
+    srand(time(NULL));
     for (int i = 0; i < rows; i++)
     {
         for(int j = 0; j < columns; j++)
         {
-            printf("Write number: ");
-            scanf("%i", &mas[i][j]);
+            // printf("Write number: ");
+            // scanf("%i", &mas[i][j]);
+            mas[i][j] = rand() % 10;
         }
     }
 
