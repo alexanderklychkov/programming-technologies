@@ -15,6 +15,11 @@ main()
         return 0;
     }
 
+    if (strlen(str) > 100) {
+        printf("String cannot be more than 100");
+        return 0;
+    }
+
     // 1. Создать одномерный массив символов, вписать с клавиатуры данные, затем прописать код так, чтобы программа удаляла первую букву.
     // 2. Создать зеркальное отображение строки с использованием второй (буферной) строки.
     printf("Select task(1, 2): ");
@@ -23,12 +28,20 @@ main()
     switch (taskNumber)
     {
         case 1:
-            for (int i = 0; i < strlen(str); i++)
             {
-                str[i] = str[i + 1];
-            }
+                char newStr[100];
+                int i;
+                int length = strlen(str);
 
-            puts(str);
+                for (i = 1; i < length; i++)
+                {
+                    newStr[i - 1] = str[i];
+                }
+
+                newStr[i - 1] = '\0';
+
+                puts(newStr);
+            }
             break;
         case 2:
             {
