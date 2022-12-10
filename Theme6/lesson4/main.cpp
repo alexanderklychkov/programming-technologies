@@ -31,9 +31,8 @@ main()
             {
                 char newStr[100];
                 int i;
-                int length = strlen(str);
 
-                for (i = 1; i < length; i++)
+                for (i = 1; i < strlen(str); i++)
                 {
                     newStr[i - 1] = str[i];
                 }
