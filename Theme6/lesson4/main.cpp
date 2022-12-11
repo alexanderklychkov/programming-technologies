@@ -28,7 +28,7 @@ main()
     switch (taskNumber)
     {
         case 1:
-            for (int i = 0; i < strlen(str); i++)
+            for (int i = 0; str[i] != 0; i++)
             {
                 str[i] = str[i + 1];
             }
