@@ -4,7 +4,7 @@
 main()
 {
     int taskNumber;
-    char str[100];
+    char str[101];
 
     printf("Write string: ");
     gets(str);
@@ -28,19 +28,12 @@ main()
     switch (taskNumber)
     {
         case 1:
+            for (int i = 0; i < strlen(str); i++)
             {
-                char newStr[100];
-                int i;
-
-                for (i = 1; i < strlen(str); i++)
-                {
-                    newStr[i - 1] = str[i];
-                }
-
-                newStr[i - 1] = '\0';
-
-                puts(newStr);
+                str[i] = str[i + 1];
             }
+
+            puts(str);
             break;
         case 2:
             {

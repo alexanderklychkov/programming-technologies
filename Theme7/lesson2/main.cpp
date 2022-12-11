@@ -23,15 +23,15 @@ void drawArray(int arr[], size_t count)
 int main()
 {
     int firstArr[5], secondArr[10];
-    size_t countFirst = 5, countSecord = 10;
+    size_t countFirst = 5, countSecond = 10;
 
     srand(time(NULL));
 
     fillArray(firstArr, countFirst);
-    fillArray(secondArr, countSecord);
+    fillArray(secondArr, countSecond);
 
     drawArray(firstArr, countFirst);
-    drawArray(secondArr, countSecord);
+    drawArray(secondArr, countSecond);
 
     return 1;
 }
