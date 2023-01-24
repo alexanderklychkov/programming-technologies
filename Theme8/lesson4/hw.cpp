@@ -76,8 +76,7 @@ public:
 
 void print(Function& func)
 {
-    double x = 2;
-    func.calculate(x);
+    func.calculate(2);
     func.print();
 }
 
